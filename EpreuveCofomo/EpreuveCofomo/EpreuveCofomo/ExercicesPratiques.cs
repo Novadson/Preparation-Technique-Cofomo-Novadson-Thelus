@@ -415,5 +415,18 @@ foreach (int number in result)
 		98
 		85
      */
+
+/*USING TAKE TO TAKE ALL FIRST ELEMENTS OF PARAMETER NUMER
+ * 
+ * *
+   int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+var result = numbers.Reverse().Take(5).OrderBy(s =>s);
+
+Console.WriteLine("Takes the first 5 numbers only:");
+foreach (int number in result)
+    Console.WriteLine(number);
+
+ */
 #endregion ALLCONSULTELINQ
 
