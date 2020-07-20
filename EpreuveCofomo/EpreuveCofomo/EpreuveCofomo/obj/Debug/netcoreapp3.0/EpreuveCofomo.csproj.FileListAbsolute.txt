@@ -9,3 +9,14 @@ C:\Users\novad\OneDrive\Documentos\EpreuveCofomo\EpreuveCofomo\EpreuveCofomo\obj
 C:\Users\novad\OneDrive\Documentos\EpreuveCofomo\EpreuveCofomo\EpreuveCofomo\obj\Debug\netcoreapp3.0\EpreuveCofomo.dll
 C:\Users\novad\OneDrive\Documentos\EpreuveCofomo\EpreuveCofomo\EpreuveCofomo\obj\Debug\netcoreapp3.0\EpreuveCofomo.pdb
 C:\Users\novad\OneDrive\Documentos\EpreuveCofomo\EpreuveCofomo\EpreuveCofomo\obj\Debug\netcoreapp3.0\EpreuveCofomo.csprojAssemblyReference.cache
+C:\Users\novad\OneDrive\Documentos\Preparation-Technique-Cofomo-Novadson-Thelus\EpreuveCofomo\EpreuveCofomo\EpreuveCofomo\obj\Debug\netcoreapp3.0\EpreuveCofomo.csprojAssemblyReference.cache
+C:\Users\novad\OneDrive\Documentos\Preparation-Technique-Cofomo-Novadson-Thelus\EpreuveCofomo\EpreuveCofomo\EpreuveCofomo\obj\Debug\netcoreapp3.0\EpreuveCofomo.AssemblyInfoInputs.cache
+C:\Users\novad\OneDrive\Documentos\Preparation-Technique-Cofomo-Novadson-Thelus\EpreuveCofomo\EpreuveCofomo\EpreuveCofomo\obj\Debug\netcoreapp3.0\EpreuveCofomo.AssemblyInfo.cs
+C:\Users\novad\OneDrive\Documentos\Preparation-Technique-Cofomo-Novadson-Thelus\EpreuveCofomo\EpreuveCofomo\EpreuveCofomo\obj\Debug\netcoreapp3.0\EpreuveCofomo.dll
+C:\Users\novad\OneDrive\Documentos\Preparation-Technique-Cofomo-Novadson-Thelus\EpreuveCofomo\EpreuveCofomo\EpreuveCofomo\obj\Debug\netcoreapp3.0\EpreuveCofomo.pdb
+C:\Users\novad\OneDrive\Documentos\Preparation-Technique-Cofomo-Novadson-Thelus\EpreuveCofomo\EpreuveCofomo\EpreuveCofomo\bin\Debug\netcoreapp3.0\EpreuveCofomo.exe
+C:\Users\novad\OneDrive\Documentos\Preparation-Technique-Cofomo-Novadson-Thelus\EpreuveCofomo\EpreuveCofomo\EpreuveCofomo\bin\Debug\netcoreapp3.0\EpreuveCofomo.deps.json
+C:\Users\novad\OneDrive\Documentos\Preparation-Technique-Cofomo-Novadson-Thelus\EpreuveCofomo\EpreuveCofomo\EpreuveCofomo\bin\Debug\netcoreapp3.0\EpreuveCofomo.runtimeconfig.json
+C:\Users\novad\OneDrive\Documentos\Preparation-Technique-Cofomo-Novadson-Thelus\EpreuveCofomo\EpreuveCofomo\EpreuveCofomo\bin\Debug\netcoreapp3.0\EpreuveCofomo.runtimeconfig.dev.json
+C:\Users\novad\OneDrive\Documentos\Preparation-Technique-Cofomo-Novadson-Thelus\EpreuveCofomo\EpreuveCofomo\EpreuveCofomo\bin\Debug\netcoreapp3.0\EpreuveCofomo.dll
+C:\Users\novad\OneDrive\Documentos\Preparation-Technique-Cofomo-Novadson-Thelus\EpreuveCofomo\EpreuveCofomo\EpreuveCofomo\bin\Debug\netcoreapp3.0\EpreuveCofomo.pdb

@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\novad\\OneDrive\\Documentos\\EpreuveCofomo\\EpreuveCofomo\\EpreuveCofomo\\EpreuveCofomo.csproj",
+      "projectUniqueName": "C:\\Users\\novad\\OneDrive\\Documentos\\Preparation-Technique-Cofomo-Novadson-Thelus\\EpreuveCofomo\\EpreuveCofomo\\EpreuveCofomo\\EpreuveCofomo.csproj",
       "projectName": "EpreuveCofomo",
-      "projectPath": "C:\\Users\\novad\\OneDrive\\Documentos\\EpreuveCofomo\\EpreuveCofomo\\EpreuveCofomo\\EpreuveCofomo.csproj",
+      "projectPath": "C:\\Users\\novad\\OneDrive\\Documentos\\Preparation-Technique-Cofomo-Novadson-Thelus\\EpreuveCofomo\\EpreuveCofomo\\EpreuveCofomo\\EpreuveCofomo.csproj",
       "packagesPath": "C:\\Users\\novad\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\novad\\OneDrive\\Documentos\\EpreuveCofomo\\EpreuveCofomo\\EpreuveCofomo\\obj\\",
+      "outputPath": "C:\\Users\\novad\\OneDrive\\Documentos\\Preparation-Technique-Cofomo-Novadson-Thelus\\EpreuveCofomo\\EpreuveCofomo\\EpreuveCofomo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"

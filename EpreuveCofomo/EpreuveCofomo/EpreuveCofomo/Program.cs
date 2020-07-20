@@ -4,27 +4,14 @@ public class Program
 {
     static void Main(string[] args)
     {
-        Person[] persons = { new Person { Name = "Mike", Age = 25 }, new Person { Name = "Joe", Age = 43 }, new Person { Name = "Nadia", Age = 31 } };
+        string[] words = { "one", "two", "three", "four", "five", "six" };
+        var result = words.Skip(4);
 
-        var result = persons.Where(p => p.Age >= 30); //USING WHERE
+        Console.WriteLine("Skips the first 4 words:");
+        foreach (string word in result)
+            Console.WriteLine(word);//Ignora as 4 primeiras palavras(Saute les 4 premiers mots)
+        Console.ReadKey();
 
-        Console.WriteLine("Finding persons who are 30 years old or older:");
-        foreach (Person person in result)
-            Console.WriteLine(String.Format("{0}: {1} years old", person.Name, person.Age));
-
-        Console.WriteLine("*****************************************");
-
-        foreach (Person person in persons)
-        {
-            if (person.Name == "Mike" && person.Age.Equals(25))
-                Console.WriteLine(String.Format("{0}: {1} years old", person.Name, person.Age));
-            continue;//USING WHERE
         }
 
-    }
-}
-class Person
-{
-    public string Name { get; set; }
-    public int Age { get; set; }
 }

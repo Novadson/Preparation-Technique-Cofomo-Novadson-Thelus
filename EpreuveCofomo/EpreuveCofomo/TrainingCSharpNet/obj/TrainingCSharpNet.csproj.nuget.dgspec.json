@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\novad\\OneDrive\\Documentos\\EpreuveCofomo\\EpreuveCofomo\\TrainingCSharpNet\\TrainingCSharpNet.csproj": {}
+    "C:\\Users\\novad\\OneDrive\\Documentos\\Preparation-Technique-Cofomo-Novadson-Thelus\\EpreuveCofomo\\EpreuveCofomo\\TrainingCSharpNet\\TrainingCSharpNet.csproj": {}
   },
   "projects": {
-    "C:\\Users\\novad\\OneDrive\\Documentos\\EpreuveCofomo\\EpreuveCofomo\\TrainingCSharpNet\\TrainingCSharpNet.csproj": {
+    "C:\\Users\\novad\\OneDrive\\Documentos\\Preparation-Technique-Cofomo-Novadson-Thelus\\EpreuveCofomo\\EpreuveCofomo\\TrainingCSharpNet\\TrainingCSharpNet.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\novad\\OneDrive\\Documentos\\EpreuveCofomo\\EpreuveCofomo\\TrainingCSharpNet\\TrainingCSharpNet.csproj",
+        "projectUniqueName": "C:\\Users\\novad\\OneDrive\\Documentos\\Preparation-Technique-Cofomo-Novadson-Thelus\\EpreuveCofomo\\EpreuveCofomo\\TrainingCSharpNet\\TrainingCSharpNet.csproj",
         "projectName": "TrainingCSharpNet",
-        "projectPath": "C:\\Users\\novad\\OneDrive\\Documentos\\EpreuveCofomo\\EpreuveCofomo\\TrainingCSharpNet\\TrainingCSharpNet.csproj",
+        "projectPath": "C:\\Users\\novad\\OneDrive\\Documentos\\Preparation-Technique-Cofomo-Novadson-Thelus\\EpreuveCofomo\\EpreuveCofomo\\TrainingCSharpNet\\TrainingCSharpNet.csproj",
         "packagesPath": "C:\\Users\\novad\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\novad\\OneDrive\\Documentos\\EpreuveCofomo\\EpreuveCofomo\\TrainingCSharpNet\\obj\\",
+        "outputPath": "C:\\Users\\novad\\OneDrive\\Documentos\\Preparation-Technique-Cofomo-Novadson-Thelus\\EpreuveCofomo\\EpreuveCofomo\\TrainingCSharpNet\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
