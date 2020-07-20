@@ -1,0 +1,11 @@
+C:\Users\novad\OneDrive\Documentos\EpreuveCofomo\EpreuveCofomo\TrainingCSharpNet\bin\Debug\netcoreapp3.0\TrainingCSharpNet.exe
+C:\Users\novad\OneDrive\Documentos\EpreuveCofomo\EpreuveCofomo\TrainingCSharpNet\bin\Debug\netcoreapp3.0\TrainingCSharpNet.deps.json
+C:\Users\novad\OneDrive\Documentos\EpreuveCofomo\EpreuveCofomo\TrainingCSharpNet\bin\Debug\netcoreapp3.0\TrainingCSharpNet.runtimeconfig.json
+C:\Users\novad\OneDrive\Documentos\EpreuveCofomo\EpreuveCofomo\TrainingCSharpNet\bin\Debug\netcoreapp3.0\TrainingCSharpNet.runtimeconfig.dev.json
+C:\Users\novad\OneDrive\Documentos\EpreuveCofomo\EpreuveCofomo\TrainingCSharpNet\bin\Debug\netcoreapp3.0\TrainingCSharpNet.dll
+C:\Users\novad\OneDrive\Documentos\EpreuveCofomo\EpreuveCofomo\TrainingCSharpNet\bin\Debug\netcoreapp3.0\TrainingCSharpNet.pdb
+C:\Users\novad\OneDrive\Documentos\EpreuveCofomo\EpreuveCofomo\TrainingCSharpNet\obj\Debug\netcoreapp3.0\TrainingCSharpNet.csprojAssemblyReference.cache
+C:\Users\novad\OneDrive\Documentos\EpreuveCofomo\EpreuveCofomo\TrainingCSharpNet\obj\Debug\netcoreapp3.0\TrainingCSharpNet.AssemblyInfoInputs.cache
+C:\Users\novad\OneDrive\Documentos\EpreuveCofomo\EpreuveCofomo\TrainingCSharpNet\obj\Debug\netcoreapp3.0\TrainingCSharpNet.AssemblyInfo.cs
+C:\Users\novad\OneDrive\Documentos\EpreuveCofomo\EpreuveCofomo\TrainingCSharpNet\obj\Debug\netcoreapp3.0\TrainingCSharpNet.dll
+C:\Users\novad\OneDrive\Documentos\EpreuveCofomo\EpreuveCofomo\TrainingCSharpNet\obj\Debug\netcoreapp3.0\TrainingCSharpNet.pdb
