@@ -386,7 +386,9 @@ foreach (int number in result)
     Console.WriteLine(number);//OUTPUT 1 2 3 4 5
 
  */
-/*
+
+
+/*//USING  SKIP WITH ARRAAY TO IGNORE ALL FIRST ELEMENTS
  * USING SKIP WITH ARRAY LIST(IGNORE)
  * string[] words = { "one", "two", "three", "four", "five", "six" };
    var result = words.Skip(4);
@@ -395,6 +397,23 @@ foreach (int number in result)
    foreach (string word in result)
        Console.WriteLine(word);//Ignora as 4 primeiras palavras(Saute les 4 premiers mots)
    Console.ReadKey();
- * */
+ * 
+ /*
+  	 List<int> grades = new List<int>{ 59, 82, 70, 56, 92, 98, 85 };
+	 List<int>  lowerGrades = grades.OrderByDescending(grade => grade).SkipWhile(grade => grade >= 80).ToList();
+
+		Console.WriteLine("All grades below 80:");
+		foreach (int grade in lowerGrades)
+		{
+			Console.WriteLine(grade);
+		}
+		/*59
+		82
+		70
+		56
+		92
+		98
+		85
+     */
 #endregion ALLCONSULTELINQ
 
