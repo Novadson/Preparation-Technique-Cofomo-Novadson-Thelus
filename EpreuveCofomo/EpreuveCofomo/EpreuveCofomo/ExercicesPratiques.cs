@@ -737,5 +737,245 @@ public class Student
 
 
  */
+
+/**LINQ METHOD USING JOIN
+        * using System;
+        using System.Linq;
+        using System.Collections;
+        using System.Collections.Generic;
+                   
+        public class Program
+        {
+           public static void Main()
+           {
+               IList<Student> studentList = new List<Student>() { 
+                   new Student() { StudentID = 1, StudentName = "John", StandardID =1 },
+                   new Student() { StudentID = 2, StudentName = "Moin", StandardID =1 },
+                   new Student() { StudentID = 3, StudentName = "Bill", StandardID =2 },
+                   new Student() { StudentID = 4, StudentName = "Ram" , StandardID =2 },
+                   new Student() { StudentID = 5, StudentName = "Ron"  } 
+               };
+
+               IList<Standard> standardList = new List<Standard>() { 
+                   new Standard(){ StandardID = 1, StandardName="Standard 1"},
+                   new Standard(){ StandardID = 2, StandardName="Standard 2"},
+                   new Standard(){ StandardID = 3, StandardName="Standard 3"}
+               };
+               var joinResult = studentList.Join(standardList,
+                                                student => student.StandardID,
+                                                standard => standard.StandardID,(student,standard)=>new
+                                                 {
+                                                     StudentName= student.StudentName,
+                                                     StandardName =standard.StandardName
+                                                 });
+
+               foreach(var result in joinResult)
+                   Console.WriteLine("Student Nam:"+result.StudentName+""+"\t"+"Standard Name:"+result.StandardName);
+           }
+        }
+        public class Student
+        {
+           public long StudentID { get; set; }
+           public long StandardID { get; set; }
+           public int Age { get; set; }
+           public string StudentName { get; set; }
+        }
+        public class Standard{
+               public long StandardID{get;set;}
+               public string StandardName{get;set;}
+        }
+ * **/
+
+/*LINQ QUERY USING JOIN SELECT ALL
+             * using System;
+            using System.Linq;
+            using System.Collections;
+            using System.Collections.Generic;
+
+            public class Program
+            {
+               public static void Main()
+               {
+                   IList<Student> studentList = new List<Student>() { 
+                       new Student() { StudentID = 1, StudentName = "John", StandardID =1 },
+                       new Student() { StudentID = 2, StudentName = "Moin", StandardID =1 },
+                       new Student() { StudentID = 3, StudentName = "Bill", StandardID =2 },
+                       new Student() { StudentID = 4, StudentName = "Ram" , StandardID =2 },
+                       new Student() { StudentID = 5, StudentName = "Ron"  } 
+                   };
+
+                   IList<Standard> standardList = new List<Standard>() { 
+                       new Standard(){ StandardID = 1, StandardName="Standard 1"},
+                       new Standard(){ StandardID = 2, StandardName="Standard 2"},
+                       new Standard(){ StandardID = 3, StandardName="Standard 3"}
+                   };
+                   var joinResult = from stud in studentList
+                                    join stand in standardList
+                                    on stud.StandardID equals stand.StandardID
+                                    select new{
+                                       stud,
+                                       stand
+                                    };
+
+                   foreach(var result in joinResult)
+                       Console.WriteLine("Student Nam:"+result.stud.StudentName+""+"\t"+"Standard Name:"+result.stud.StudentName);
+               }
+            }
+            public class Student
+            {
+               public long StudentID { get; set; }
+               public long StandardID { get; set; }
+               public int Age { get; set; }
+               public string StudentName { get; set; }
+            }
+            public class Standard{
+                   public long StandardID{get;set;}
+                   public string StandardName{get;set;}
+            }
+
+ */
+
+/*LINQ QUERY USING JOIN SELECT SPECIFIC COLUNM
+             * using System;
+            using System.Linq;
+            using System.Collections;
+            using System.Collections.Generic;
+
+            public class Program
+            {
+               public static void Main()
+               {
+                   IList<Student> studentList = new List<Student>() { 
+                       new Student() { StudentID = 1, StudentName = "John", StandardID =1 },
+                       new Student() { StudentID = 2, StudentName = "Moin", StandardID =1 },
+                       new Student() { StudentID = 3, StudentName = "Bill", StandardID =2 },
+                       new Student() { StudentID = 4, StudentName = "Ram" , StandardID =2 },
+                       new Student() { StudentID = 5, StudentName = "Ron"  } 
+                   };
+
+                   IList<Standard> standardList = new List<Standard>() { 
+                       new Standard(){ StandardID = 1, StandardName="Standard 1"},
+                       new Standard(){ StandardID = 2, StandardName="Standard 2"},
+                       new Standard(){ StandardID = 3, StandardName="Standard 3"}
+                   };
+                   var joinResult = from stud in studentList
+                                    join stand in standardList
+                                    on stud.StandardID equals stand.StandardID
+                                    select new{
+                                       StudentName = stud.StudentName,
+                                       StandardName =stand.StandardName
+                                    };
+
+                   foreach(var result in joinResult)
+                       Console.WriteLine("Student Nam:"+result.StudentName+""+"\t"+"Standard Name:"+result.StudentName);
+               }
+            }
+            public class Student
+            {
+               public long StudentID { get; set; }
+               public long StandardID { get; set; }
+               public int Age { get; set; }
+               public string StudentName { get; set; }
+            }
+            public class Standard{
+                   public long StandardID{get;set;}
+                   public string StandardName{get;set;}
+            }
+
+
+
+ * 
+ * *
+ */
+
+/*LINQ METHOD USING GROUPJOIN
+        using System;
+        using System.Linq;
+        using System.Collections;
+        using System.Collections.Generic;
+
+        public class Program
+        {
+           public static void Main()
+           {
+                   IList<Student> studentList = new List<Student>() { 
+                       new Student() { StudentID = 1, StudentName = "John", StandardID =1 },
+                       new Student() { StudentID = 2, StudentName = "Moin", StandardID =1 },
+                       new Student() { StudentID = 3, StudentName = "Bill", StandardID =2 },
+                       new Student() { StudentID = 4, StudentName = "Ram",  StandardID =2 },
+                       new Student() { StudentID = 5, StudentName = "Ron" } 
+                   };
+
+                   IList<Standard> standardList = new List<Standard>() { 
+                       new Standard(){ StandardID = 1, StandardName="Standard 1"},
+                       new Standard(){ StandardID = 2, StandardName="Standard 2"},
+                       new Standard(){ StandardID = 3, StandardName="Standard 3"}
+                   };
+
+                   var groupJoin =standardList.GroupJoin(studentList,
+                                                        standard =>standard.StandardID,
+                                                        student => student.StandardID,(standar,student)=> new
+                                                         {
+                                                           Students = student,
+                                                           StandarFullName = standar.StandardName
+                                                         });
+                   foreach (var item in groupJoin)
+                   { 
+                       Console.WriteLine(item.StandarFullName );
+
+                       foreach(var stud in item.Students)
+                           Console.WriteLine(stud.StudentName);
+                   }
+           }
+        }
+        public class Student
+        {
+           public long StudentID { get; set; }
+           public long StandardID { get; set; }
+           public int Age { get; set; }
+           public string StudentName { get; set; }
+        }
+        public class Standard{
+               public long StandardID{get;set;}
+               public string StandardName{get;set;}
+        }
+
+ */
+
+/*USING  FOREACH METHOD*
+ using System;
+using System.Linq;
+using System.Collections;
+using System.Collections.Generic;
+
+public class Program
+{
+    public static bool IsTrue(Student student) => student.Age > 20 && student.Age < 29;
+    public static void Main()
+    {
+        List<Student> students = new List<Student>(){
+            new Student(){IDStudent = 1,StudentName="Novadson",Age=29},
+            new Student(){IDStudent = 2,StudentName="Davidson",Age=25},
+            new Student(){IDStudent = 3,StudentName="Jonelson",Age=20},
+            new Student(){IDStudent = 4,StudentName="Cadiana",Age=27},
+            new Student(){IDStudent = 5,StudentName="Sabrina",Age=24}
+        };
+
+        var filterResult = from std in students
+                           where IsTrue(std)
+                           select std;
+        filterResult.ToList().ForEach(st => Console.WriteLine("IDStudent:" + st.IDStudent + "\t" + "Student Name:" + st.StudentName + "\t" + "Student Age:" + st.Age));
+
+
+    }
+}
+public class Student
+{
+    public long IDStudent { get; set; }
+    public int Age { get; set; }
+    public string StudentName { get; set; }
+}
+
+ */
 #endregion ALLCONSULTELINQQUERY
 

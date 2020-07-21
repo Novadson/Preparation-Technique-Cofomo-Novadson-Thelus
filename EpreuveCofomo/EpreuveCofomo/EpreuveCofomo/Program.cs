@@ -19,8 +19,8 @@ public class Program
         var filterResult = from std in students
                            where IsTrue(std)
                            select std;
-        foreach (var st in filterResult)
-            Console.WriteLine("IDStudent:" + st.IDStudent + "\t" + "Student Name:" + st.StudentName + "\t" + "Student Age:" + st.Age);
+        filterResult.ToList().ForEach(st => Console.WriteLine("IDStudent:" + st.IDStudent + "\t" + "Student Name:" + st.StudentName + "\t" + "Student Age:" + st.Age));
+
 
     }
 }
