@@ -1,2 +1,3 @@
 https://linqsamples.com/linq-to-objects/set(linq)
-https://www.tutorialsteacher.com/linq/linq-query-syntax(lind query)
+https://www.tutorialsteacher.com/linq/linq-query-syntax(lind query);
+https://www.tutorialsteacher.com/linq/linq-element-operator-last-lastordefault

@@ -1,17 +1,32 @@
 ﻿using System;
 using System.Linq;
+using System.Collections;
+using System.Collections.Generic;
+
 public class Program
 {
-    static void Main(string[] args)
+    public static bool IsTrue(Student student) => student.Age > 20 && student.Age < 29;
+    public static void Main()
     {
-        string[] words = { "one", "two", "three", "four", "five", "six" };
-        var result = words.Skip(4);
+        List<Student> students = new List<Student>(){
+            new Student(){IDStudent = 1,StudentName="Novadson",Age=29},
+            new Student(){IDStudent = 2,StudentName="Davidson",Age=25},
+            new Student(){IDStudent = 3,StudentName="Jonelson",Age=20},
+            new Student(){IDStudent = 4,StudentName="Cadiana",Age=27},
+            new Student(){IDStudent = 5,StudentName="Sabrina",Age=24}
+        };
 
-        Console.WriteLine("Skips the first 4 words:");
-        foreach (string word in result)
-            Console.WriteLine(word);//Ignora as 4 primeiras palavras(Saute les 4 premiers mots)
-        Console.ReadKey();
+        var filterResult = from std in students
+                           where IsTrue(std)
+                           select std;
+        foreach (var st in filterResult)
+            Console.WriteLine("IDStudent:" + st.IDStudent + "\t" + "Student Name:" + st.StudentName + "\t" + "Student Age:" + st.Age);
 
-        }
-
+    }
+}
+public class Student
+{
+    public long IDStudent { get; set; }
+    public int Age { get; set; }
+    public string StudentName { get; set; }
 }
