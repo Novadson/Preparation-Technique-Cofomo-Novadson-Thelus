@@ -600,52 +600,140 @@ public class Student
 
  */
 
- /* LINQ QUERY  USING TYPEOF 
-          * using System;
-            using System.Linq;
-            using System.Collections;
-            using System.Collections.Generic;
-					
-        public class Program
-        {
-	        public static void Main()
-	        {
-		        IList mixedList = new ArrayList();
-		        mixedList.Add(0);
-		        mixedList.Add("One");
-		        mixedList.Add("Two");
-		        mixedList.Add(3);
-		        mixedList.Add(new Student() { IDStudent = 1, StudentName = "Bill" });
+/* LINQ QUERY  USING TYPEOF 
+         * using System;
+           using System.Linq;
+           using System.Collections;
+           using System.Collections.Generic;
 
-		        /*Type of Student
-		        Console.Write("Student Result:");
-		        var studentResult = from s in mixedList.OfType<Student>()
-                               select s;
-		        foreach(var type in studentResult)
-			        Console.WriteLine(type.StudentName);
-		
-		        /*Type of String
-		        Console.Write("Student Result:");
-		        var stringResult = from s in mixedList.OfType<String>()
-        select s;
-		        foreach(var type in stringResult)
-			        Console.WriteLine(type);
-		
-		        /*Type of Int
-		        Console.Write("Student Result:");
-		        var intResult = from s in mixedList.OfType<int>()
-        select s;
-		        foreach(var type in intResult)
-			        Console.Write(type);
+       public class Program
+       {
+           public static void Main()
+           {
+               IList mixedList = new ArrayList();
+               mixedList.Add(0);
+               mixedList.Add("One");
+               mixedList.Add("Two");
+               mixedList.Add(3);
+               mixedList.Add(new Student() { IDStudent = 1, StudentName = "Bill" });
 
-	        }
-        }
-        public class Student
-        {
-            public long IDStudent { get; set; }
-            public int Age { get; set; }
-            public string StudentName { get; set; }
-        }   
+               /*Type of Student
+               Console.Write("Student Result:");
+               var studentResult = from s in mixedList.OfType<Student>()
+                              select s;
+               foreach(var type in studentResult)
+                   Console.WriteLine(type.StudentName);
+
+               /*Type of String
+               Console.Write("Student Result:");
+               var stringResult = from s in mixedList.OfType<String>()
+       select s;
+               foreach(var type in stringResult)
+                   Console.WriteLine(type);
+
+               /*Type of Int
+               Console.Write("Student Result:");
+               var intResult = from s in mixedList.OfType<int>()
+       select s;
+               foreach(var type in intResult)
+                   Console.Write(type);
+
+           }
+       }
+       public class Student
+       {
+           public long IDStudent { get; set; }
+           public int Age { get; set; }
+           public string StudentName { get; set; }
+       }   
+
+
+*/
+
+/* LINQ QUERY/METHOD USING  GROUPBY 
+
+ using System;
+using System.Linq;
+using System.Collections;
+using System.Collections.Generic;
+
+public class Program
+{
+   public static void Main()
+   {
+      List<Student> students = new List<Student>(){
+           new Student(){IDStudent = 1,StudentName="Novadson",Age=29},
+           new Student(){IDStudent = 2,StudentName="Davidson",Age=20},
+           new Student(){IDStudent = 3,StudentName="Jonelson",Age=20},
+           new Student(){IDStudent = 4,StudentName="Cadiana",Age=29},
+           new Student(){IDStudent = 5,StudentName="Sabrina",Age=24}
+       };
+
+       var result = from std in students
+              group std by std.Age; 
+       var groupedResult = students.GroupBy(s => s.Age);
+
+       foreach(var res in result){
+           Console.WriteLine(res.Key);
+           foreach(var student in res)
+               Console.WriteLine(student.StudentName);
+       }
+       Console.WriteLine("*******Linq Method*********");
+       foreach(var res2 in groupedResult){
+           Console.WriteLine(res2.Key);
+           foreach(var student in res2)
+               Console.WriteLine(student.StudentName);
+       }
+
+   }
+}
+public class Student
+{
+   public long IDStudent { get; set; }
+   public int Age { get; set; }
+   public string StudentName { get; set; }
+}
+
+
+ */
+
+/** LINQ QUERY USING TOLOOKUP
+ using System;
+using System.Linq;
+using System.Collections;
+using System.Collections.Generic;
+                   
+public class Program
+{
+   public static void Main()
+   {
+     
+     IList<Student> studentList = new List<Student>() { 
+       new Student() { IDStudent = 1, StudentName = "John", Age = 18 } ,
+       new Student() { IDStudent = 2, StudentName = "Steve",  Age = 21 } ,
+       new Student() { IDStudent = 3, StudentName = "Bill",  Age = 18 } ,
+       new Student() { IDStudent = 4, StudentName = "Ram" , Age = 20 } ,
+       new Student() { IDStudent = 5, StudentName = "Abram" , Age = 21 } 
+   };
+
+   var lookupResult = studentList.ToLookup(s => s.Age);
+
+   foreach (var group in lookupResult)
+   {
+       Console.WriteLine("Age Group: {0}", group.Key);  //Each group has a key 
+
+       foreach(Student s in group)  //Each group has a inner collection  
+           Console.WriteLine("Student Name: {0}", s.StudentName);
+   }
+  
+   }
+}
+public class Student
+{
+   public long IDStudent { get; set; }
+   public int Age { get; set; }
+   public string StudentName { get; set; }
+}
 
 
  */
