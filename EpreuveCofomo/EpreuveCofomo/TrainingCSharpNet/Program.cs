@@ -1,12 +1,11 @@
 ﻿using System;
+using System.Linq;
 
-namespace TrainingCSharpNet
+class program
 {
-    class Program
+    public static void Main(String[] args)
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
+
+        Console.ReadKey();
     }
 }
